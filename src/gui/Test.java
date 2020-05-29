@@ -2,6 +2,7 @@ package gui;
 
 import java.util.ArrayList;
 
+import Util.Result;
 import Util.Util;
 
 public class Test {
@@ -47,9 +48,9 @@ public class Test {
 				"        }  \r\n" + 
 				"    }  \r\n" + 
 				"}  ";
-		ArrayList<String> words= util.Split(file);
+		Result result= util.Split(file);
 		int i=0;
-		  for (String w : words) {
+		  for (String w : result.words) {
 			   w=w.trim();
 			   System.out.println(i+" "+w);
 			   i++;
